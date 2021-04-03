@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;700&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+body {
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* fontul de baza al site-ului */
+    font-family: 'New Tegomin';
+}
+
+/* cand avem link in partea de jos a pag pt a reveni sus, face scroll-ul mai usor sa iti dai seama ca esti pe acceasi pag */
+html {
+    scroll-behavior: smooth;
+}
+
+/* h1 este element block (pot sa aranjez elementele inauntrul sau) */
+h1 {
+    color: green;
+    font-family: 'Train One';
+    font-size: 2em;
+    text-align: center;
+}
+
+h4 {
+    color: darkgreen;
+    font-family: 'Nato Sans HK';
+    font-weight: normal;
+}   
+
+p {
+    font-family: 'Nato Sans HK';
+}
+
+img {
+    height: 10em;
+}
+
+/* a este element inline (nu pot sa aranjez elemente inauntrul sau)*/
+a {
+    color: darkgreen;
+    text-decoration-line: none;
+
+}
+
+/* hover pe link */
+a:hover {
+    color: darkorange;
+/* se coloreaza linia de la link cand trecem cu mouse-ul peste */
+    text-decoration-line: underline;
+}
+/* stilizam id-ul cu elementul capuccino */
+#capuccino {
+    color: rgb(90, 177, 82);
+}
+
+/* stilizam elementele din clasa "pret" */
+.pret {
+    font-family: 'Train One';
+    color: darkgreen;
+    font-size: 1.5em;
+    font-style: inherit;
+}
+
+/* stilizare lista */
+ul {
+    /* defineste simbolul din fata listei (am folosit html symbol cautat pe net) */
+  list-style-type: "☕";
+}
+
+/* stilizarea span-ului */
+#starbuzz {
+    font-size: 1.3em;
+}
+
+.produs {
+    background-color: rgba(247, 247, 234, 0.596);
+}
+
+/* aliniere logo pe centru in interiorul div-ului */
+.logo {
+    text-align: center;
+}
