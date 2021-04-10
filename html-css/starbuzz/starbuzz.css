@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;700&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+/* *-stilizeaza toate elementele din site (CSS reset)*/
+/* box-sizing: border-box; face ca width-ul sa fie exact atat cat am setat */
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+body {
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* fontul de baza al site-ului */
+    font-family: 'New Tegomin';
+}
+
+/* cand avem link in partea de jos a pag pt a reveni sus, face scroll-ul mai usor sa iti dai seama ca esti pe acceasi pag */
+html {
+    scroll-behavior: smooth;
+}
+
+/* h1 este element block (pot sa aranjez elementele inauntrul sau) */
+h1 {
+    color: green;
+    font-family: 'Train One';
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    margin-left: 3em;
+}
+
+h3 {
+    margin-left: 3em;
+}
+
+h4 {
+    color: darkgreen;
+    font-family: 'Nato Sans HK';
+    font-weight: normal;
+}   
+
+p {
+    font-family: 'Nato Sans HK';
+}
+
+img {
+    height: 10em;
+}
+
+/* a este element inline (nu pot sa aranjez elemente inauntrul sau)*/
+a {
+    color: darkgreen;
+    text-decoration-line: none;
+    margin-left: 4em;
+}
+
+/* hover pe link */
+a:hover {
+    color: darkorange;
+/* se coloreaza linia de la link cand trecem cu mouse-ul peste */
+    text-decoration-line: underline;
+}
+/* stilizam id-ul cu elementul capuccino */
+#capuccino {
+    color: rgb(90, 177, 82);
+}
+
+/* stilizam elementele din clasa "pret" */
+.pret {
+    font-family: 'Train One';
+    color: darkgreen;
+    font-size: 1.5em;
+    font-style: inherit;
+}
+
+/* stilizare lista */
+ul {
+    /* defineste simbolul din fata listei (am folosit html symbol cautat pe net) */
+  list-style-type: "☕";
+  /* a-ul de la rgb(a) repr transparenta pe care o setam din paleta de culori */
+  background-color: rgba(247, 247, 234, 0.596);
+}
+
+/* stilizarea span-ului */
+#starbuzz {
+    font-size: 1.3em;
+}
+/* border-style - este pt border 
+boreder-radius: 1em 0 1em 0*/
+.produs {
+    background-color: rgba(247, 247, 234, 0.596);
+    border-style: solid;
+    border-color: rgba(114, 59, 59, 0.336);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    padding: 1em 3em;
+    margin-bottom: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    width: 30%;
+    
+}
+
+/* aliniere logo pe centru in interiorul div-ului */
+.logo {
+    text-align: center;
+}
+
+.test {
+    position: absolute;
+    left: 30em;
+    top: 27em;
+    background-color: rgba(247, 247, 234, 0.596);
+    border-style: solid;
+    border-color: rgba(114, 59, 59, 0.336);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    padding: 1em 3em;
+    margin-bottom: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    width: 30%;
+}
+
+/* justify-content: flex-end/strat - este folosit pentru alinierea pe rand */

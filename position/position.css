@@ -1,0 +1,61 @@
+* {
+    /* CSS reset - se pune la inceput pt a avea setarile pt toata pagina */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* 200vh - de 2 ori mai mare decat inaltimea ferestrei */
+    height: 200vh;
+}
+
+div {
+    width: 13em;
+    height: 6em;
+}
+
+/* :nth-child - selecteaza div-urile pe rand */
+div:nth-child(1) {
+    /* position: static; este by default*/
+    background-color: cornflowerblue;
+}
+
+div:nth-child(2) {
+    /* cand folosim position: relative; trebuie sa folosim left:/right:/top:/bottom: 
+    pozitia relativa este relativa la pozitia initiala*/
+    position: relative;
+    left: 2em;
+    top: -2em; 
+    /* bottom: 2em; este acelasi lucru cu top: -2em;*/
+    background-color: green;
+}
+
+div:nth-child(3) {
+    /* pozitia absoluta este relativa la parintele sau */
+    position: absolute;
+    left: 14em;
+    top: 10em;
+    background-color: lightseagreen;
+    z-index: 1;
+}
+
+div:nth-child(4) {
+    /* pozitia fixa este relativa la fereastra (obiectul ramane nemiscat cand dam scroll)*/
+    position: fixed;
+    /* pt meniu sa ramana nemiscat in partea de sus la scroll punem top:0; */
+    top: 8em;
+    right: 25em;
+    background-color: lightsalmon;
+}
+
+div:nth-child(5) {
+    /* pozitia stickey se opreste (se lipeste) la scroll in pozitie fixa 
+    (in exemplu se opreste la top-ul de 2em) */
+    position: sticky;
+    top: 2em;
+    left: 2em;
+    background-color: yellowgreen;
+    /* z-index: - setam daca obiectul vrem sa fie in fata sau in spatele altui obiect (ca layer-ele de la photoshop)  */
+    z-index: -1;
+}
